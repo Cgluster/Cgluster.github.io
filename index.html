@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <script src="app.js" defer></script>
     <title>Clifford Luster's Portfolio</title>
   </head>
   <body>
+    <!-- Navigation Bar -->
     <nav class="main-navigation">
-      <h2 class="header-bar">Clifford Luster - Front-End Developer</h2>
+      <h2 class="navigation-header">Clifford Luster</h2>
       <ul class="navigation-bar">
-        <li class="navigation-item"><a href="/">Home</a></li>
         <li class="navigation-item"><a href="#about-me">About Me</a></li>
         <li class="navigation-item"><a href="#projects">Projects</a></li>
         <li class="navigation-item"><a href="#skills">Skills</a></li>
@@ -20,76 +24,154 @@
       </ul>
     </nav>
 
-    <main>
-      <section id="about-me">
-        <div class="about-me-container">
-          <div class="about-me-text-container">
-            <h2>About Me</h2>
-            <p>
-              Hello there. My name is Clifford Luster. I am a Front-End
-              Developer based in Las Vegas, NV.
-            </p>
-            <p>
-              I enjoy building projects from scratch using React and Redux. I am
-              currently seeking a position that allows me to build or work on
-              projects that involve said libraries.
-            </p>
-          </div>
-          <img src="logo192.png" class="react-symbol" alt="React Symbol" />
-        </div>
-      </section>
+    <!-- Picture of Las Vegas -->
+    <div class="lv-picture">
+      <img
+        src="./images/lv-header.jpg"
+        alt="Las Vegas Strip"
+        class="lv-image"
+      />
+    </div>
 
-      <section id="projects">
+    <!-- About Me -->
+    <section id="about-me">
+      <div class="about-me-container">
+        <h2>About Me</h2>
+        <p>
+          My name is Clifford Luster. I am a Front-End Developer from Las Vegas,
+          NV.
+        </p>
+        <p>I enjoy building projects using React and Redux.</p>
+        <div class="image-row">
+          <div class="image-column">
+            <img src="./images/react.png" alt="React logo" />
+          </div>
+          <div class="image-column">
+            <img src="./images/redux.png" alt="Redux logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project area -->
+    <hr />
+    <section id="projects">
+      <div class="projects-header">
         <h2>Projects</h2>
-        <details class="project">
-          <summary class="project-title">Seddit - A Reddit Clone</summary>
-          <img src="seddit_sample.jpg" class="project-image" />
-          <p class="project-desc">A clone of Reddit using React and Redux</p>
-        </details>
-        <details class="project">
-          <summary class="project-title">Shopping Cart</summary>
-          <img src="cart_sample.jpg" class="project-image" />
-          <p class="project-desc">
-            A basic e-commerce layout using React and Redux
+      </div>
+      <div class="projects-container">
+        <details class="project-column">
+          <summary class="project-title">Seddit - A Reddit Lookalike</summary>
+          <img
+            src="./images/seddit_sample.jpg"
+            alt="Seddit - A Reddit lookalike"
+            class="project-image"
+          />
+          <p class="project-description">
+            A Reddit lookalike site that uses React and Redux. API used to fetch
+            posts.
+          </p>
+          <p class="project-code">
+            <a href="https://github.com/Cgluster/seddit">Check The Code</a>
           </p>
         </details>
-        <details class="project">
-          <summary class="project-title">
-            Social Media App - Work in Progress
-          </summary>
+        <details class="project-column">
+          <summary class="project-title">Landing Page</summary>
+          <img
+            src="./images/landing.jpg"
+            alt="Landing Page"
+            class="project-image"
+          />
+          <p class="project-description">
+            A simple landing page that asks a user for their email to get an
+            e-book.
+          </p>
+          <p class="project-code">
+            <a href="https://github.com/Cgluster/new-landing-page"
+              >Check The Code</a
+            >
+          </p>
         </details>
-      </section>
+        <details class="project-column">
+          <summary class="project-title">Grocery Cart</summary>
+          <img
+            src="./images/grocery-cart.jpg"
+            alt="A Grocery Cart sample"
+            class="project-image"
+          />
+          <p class="project-description">
+            A page that allows a user to select their desired products. The user
+            can add, decrement or remove items in cart.
+          </p>
+          <p class="project-code">
+            <a href="https://github.com/Cgluster/grocery-cart"
+              >Check The Code</a
+            >
+          </p>
+        </details>
+        <details class="project-column">
+          <summary class="project-title">
+            Coffee Shop - Work in Progress
+          </summary>
+          <!-- <img src="" alt="" class="project-image" /> -->
+          <p class="project-description">
+            Site will allow users navigate site for various activities.
+          </p>
+          <!-- <p class="project-code"><a href="">Check The Code</a></p> -->
+        </details>
+      </div>
+    </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-            <li>React</li>
-            <li>Redux</li>
-            <li>Git</li>
-            <li>Node.js</li>
-            <li>Jest</li>
-          </ul>
-        </div>
-      </section>
+    <!-- Skills -->
+    <hr />
+    <section id="skills">
+      <h2 class="skills-header">Skills</h2>
+      <div class="skills-container">
+        <i class="devicon-html5-plain skills-icon"></i>
+        <i class="devicon-css3-plain skills-icon"></i>
+        <i class="devicon-javascript-plain skills-icon"></i>
+        <i class="devicon-react-original skills-icon"></i>
+        <i class="devicon-redux-original skills-icon"></i>
+        <i class="devicon-nodejs-plain skills-icon"></i>
+        <i class="devicon-jest-plain skills-icon"></i>
+        <i class="devicon-git-plain skills-icon"></i>
+      </div>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/clifford-luster-0774b2103/"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a href="https://github.com/Cgluster">Github</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>2022</footer>
+    <!-- Contact, include resume download, maybe do a card? -->
+    <hr />
+    <section id="contact">
+      <h2 class="contact-header">Contact</h2>
+      <p class="contact-message-me">Feel free to contact me.</p>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/clifford-luster-0774b2103/"
+          ><i class="devicon-linkedin-plain contact-icon"></i
+        ></a>
+        <a href="https://github.com/Cgluster"
+          ><i class="devicon-github-original contact-icon"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>Clifford Luster 2022</footer>
+
+    <!-- Button to scroll to top of page -->
+    <button class="back-to-top hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M7 11l5-5m0 0l5 5m-5-5v12"
+        />
+      </svg>
+    </button>
   </body>
 </html>
